@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Конвертер Величин</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="https://img.icons8.com/emoji/48/000000/repeat-button-emoji.png">
+    <style>
+        body{
+            animation-name: fadein;
+            animation-duration: 1s;
+            margin-top: 70px;
+            background-color: #333;
+            color: #fff;
+        }
+        .card-block{
+            padding: 10px;
+            outline-color: #333;
+            outline: none;
+        }
+        #output{
+            animation-name: fadein;
+            animation-duration: 0.5s;
+        }
+        @keyframes fadein {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    </style>
+</head>
+<body class="bg-dark">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="display-3 text-center mb-3">Конвертер Величин</h1>
+            <form>
+                <div class="form-group">
+                    <input type="number" id="kmInput" placeholder="Введите Километр..." class="form-control form-control-lg">
+                </div>
+            </form>
+            <div id="output">
+                <div class="card">
+                    <div class="card-block alert-warning">
+                        <h4>Метры:</h4>
+                        <div id="metresOutput">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block alert-primary">
+                        <h4>Сантиметры:</h4>
+                        <div id="smOutput">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block alert-success">
+                        <h4>Миллиметры:</h4>
+                        <div id="millimetresOutput">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="text-white text-decoration-none mt-3" href="index.html"><button class="btn btn-primary mt-3">Eng</button></a>
+            <a class="text-white text-decoration-none mt-3" href="russian.html"><button class="btn btn-danger mt-3">Rus</button></a>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
